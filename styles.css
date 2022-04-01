@@ -1,0 +1,113 @@
+
+@font-face {
+    font-family: 'adelon medium';
+    src: url('Fonts/adelon-medium-webfont.woff2') format('woff2'),
+         url('Fonts/adelon-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* ,*::after,*::before{
+    box-sizing: border-box;
+    margin :0;
+    padding:0;
+}
+html{
+    font-size:62.5% ;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url('images/plus.svg');
+    text-align: center;
+    background-color: #ddd;
+}
+
+
+.container{
+    width: auto;
+    max-width: 900px;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255,0.7);
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0,0.15);
+}
+
+.text{
+    font-family:'adelon medium','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.long-qoute{
+    font-size: 2.5rem;
+}
+
+#quote-icon{
+    width: 5rem;
+}
+
+.author{
+    margin: 1rem 0;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width : 900px){
+    .container{
+        margin: auto 1rem;
+    }
+
+    .text{
+        font-size: 2.5rem;
+    }
+}
+
+
+/*
+//// Btn
+*/
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.btn{
+    background-color: #333;
+    border: 0;
+    border-radius: 1rem;
+    color: #fff;
+    padding : 1rem 1.5rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 .3rem rgba(120, 120,120,0.6);
+    transition: all 0.1s;
+    fill: #fff;
+}
+
+.btn:hover{
+    background-color: #444;
+    color:#eee;
+}
+
+.btn:active{
+    transform: translateY(.3rem);
+    box-shadow: 0 0;
+}
+
+.twitter-button{
+    background-color: #38a1f3;
+}
+
+.twitter-button:hover{
+    background-color: #fff;
+}
+.twitter-button:hover #twitter{
+    fill: #38a1f3;
+}
